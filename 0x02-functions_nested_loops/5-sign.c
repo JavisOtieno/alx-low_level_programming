@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <main.h>
+#include "main"
 /**
  *print_sign - Entry point
  *@n: number to be checked
