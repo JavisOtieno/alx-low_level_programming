@@ -2,8 +2,8 @@
 /**
 *_islower - Entry Point
 *Description: function to check if letter is lower
-*int c: letter to be checked 
-*Return : 0
+*c: letter to be checked 
+*Return: 1 if lower and 0 otherwise
 */
 int _islower(int c)
 {
