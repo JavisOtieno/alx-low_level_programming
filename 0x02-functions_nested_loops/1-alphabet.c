@@ -1,10 +1,10 @@
-#include <stdio.h>
+#include <main.h>
 /**
 *main - Entry point
 *Description: Prints the alphabet
 *Return: 0
 */
-int main(void)
+void  print_alphabet(void)
 {
 int n=97;
 
