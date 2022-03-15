@@ -1,14 +1,18 @@
 #include <stdio.h>
 /**
 *main - Entry point
-*Description : Prints the alphabet
-*Return : 0
+*Description: Prints the alphabet
+*Return: 0
 */
 int main(void)
 {
-    for(int n=97;n<=122;n++)
-    {
-        printf("%c",n);
-    }
-    printf("\n");
+int n=97;
+
+while(n<=122)
+{
+	printf("%c",n);
+	n++;
 }
+printf("\n");
+}
+
