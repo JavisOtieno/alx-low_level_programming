@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * _isdigit - int _isdigit(int c) function returns 1 if c is a 0-9 digit
  *
