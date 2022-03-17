@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * more_numbers - function outputs digits 0-14 ten times
  *
