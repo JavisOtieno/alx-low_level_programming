@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * _isupper - int _isupper(int c) function returns 1 if c is uppercase
  *
