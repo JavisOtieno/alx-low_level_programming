@@ -1,28 +1,17 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * leet - encodes a string in 1337
- * @s: string to be encoded
+ * *leet - function encodes a string into l337
  *
- * Return: the resulting string;
+ *@n: char * pointer
+ *
+ * Return: char *
  */
-char *leet(char *s)
+
+char *leet(char *)
 {
-	int i, j;
+	
 
-	char *a = "aAeEoOtTlL";
-	char *b = "4433007711";
 
-	for (i = 0; s[i] != '\0'; i++)
-	{
-		for (j = 0; j < 10; j++)
-		{
-			if (s[i] == a[j])
-			{
-				s[i] = b[j];
-			}
-		}
-	}
 
-	return (s);
 }

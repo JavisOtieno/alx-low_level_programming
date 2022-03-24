@@ -1,34 +1,33 @@
-#include "main.h"
-
+#include "holberton.h"
+#include<stdio.h>
 /**
- * cap_string - capitalizes everey word of a string
- * @s: string to modify
+ * *cap_string - function capitalizes all words of a string
  *
- * Return: the resulting string
+ *@n: char * pointer
+ *
+ * Return: char *
  */
-char *cap_string(char *s)
+
+char *cap_string(char *n)
 {
-	int i, j;
+	int count;
+	int count2;
+	char *x = " .,{}()\n\t\"?!";
 
-	char spe[13] = {' ', '\t', '\n', ',', ';', '.',
-		'!', '?', '"', '(', ')', '{', '}'};
-
-	for (i = 0; s[i] != '\0'; i++)
+	for (count = 0; *(n + count) != '\0'; count++)
 	{
-		if (i == 0 && s[i] >= 'a' && s[i] <= 'z')
-			s[i] -= 32;
-
-		for (j = 0; j < 13; j++)
+		for (count2 = 0; *(x + count2) != '\0'; count2++)
 		{
-			if (s[i] == spe[j])
+			if (*(n + count - 1) == *(x + count2) && *(n + count) >=
+			    'a' && *(n + count) <= 'z')
 			{
-				if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
-				{
-					s[i + 1] -= 32;
-				}
+				*(n + count) = ('A' - 'a') + *(n + count);
+			}
+			else if ((count == 0) && *(n + count) >= 'a' && *(n + count) <= 'z')
+			{
+				*(n + count) = ('A' - 'a') + *(n + count);
 			}
 		}
 	}
-
-	return (s);
+	return (n);
 }
