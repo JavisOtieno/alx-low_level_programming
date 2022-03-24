@@ -1,47 +1,23 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * *_strcmp - function compares two strings
+ * _strcmp - compares two strings
+ * @s1: first string to compare
+ * @s2: second string to compare
  *
- *@s1: char pointer
- *@s2: char pointer
- *
- * Return: 0
+ * Return: less than 0 if s1 is less than s2, 0 if they're equal,
+ * more than 0 if s1 is greater than s2
  */
-
 int _strcmp(char *s1, char *s2)
 {
-	char *ps1 = s1;
-	char *ps2 = s2;
-
-	for (; *ps1 != '\0'; ps1++, ps2++)
+	while (*s1 == *s2)
 	{
-		if (*ps1 != *ps2)
+		if (*s1 == '\0')
 		{
-			return (*ps1 - *ps2);
+			return (0);
 		}
+		s1++;
+		s2++;
 	}
-	return (0);
-}
-
-/**
- * _strlen - function returns length of a string
- *
- *@s: char pointer
- *
- * Return: length
- *
- */
-
-int _strlen(char *s)
-{
-	char *copy_s = s;
-	int length = 0;
-
-	while (*copy_s != '\0')
-	{
-		length++;
-		copy_s++;
-	}
-	return (length);
+	return (*s1 - *s2);
 }
