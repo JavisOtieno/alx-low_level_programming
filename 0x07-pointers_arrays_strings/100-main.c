@@ -1,18 +1,19 @@
-#include "main.h"
 #include <stdio.h>
 
-/**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
- */
-int main(void)
-{
-	char *s0 = "Anne Cognet";
-	char *s1 = "Asaia Palacios";
+int main(void){
 
-	printf("%s, %s\n", s0, s1);
-	set_string(&s1, s0);
-	printf("%s, %s\n", s0, s1);
-	return (0);
+    unsigned int factorial(unsigned int n){
+
+    if(n<=1){
+        return 1;
+    }else{
+        return n*factorial(n-1);
+    }
+
+    }
+
+printf("%d, this sucks",factorial(10));
+
+return(0);
+
 }
